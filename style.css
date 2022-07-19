@@ -2,7 +2,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
+.container,
+.main {
     width: 70%;
     height: 290px;
     margin: 20px auto;
@@ -14,7 +15,6 @@ body {
     justify-content: space-between;
     grid-row-gap: 26px;
     border-radius: 30px;
-    justify-content: space-between;
 }
 
 .top-header {
@@ -36,13 +36,11 @@ body {
 }
 
 /* --------------------------main content (left and raight)----------------- */
-main {
-    margin-top: 100px;
-}
 
 .content-left {
     background-color: #161616;
     width: 250px;
+    display: inline-block;
     height: 250px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -50,6 +48,7 @@ main {
     align-items: center;
     align-content: center;
     margin-left: 140px;
+    margin-top: 100px;
     border-radius: 5px;
 }
 
@@ -66,4 +65,39 @@ main {
 #left-active-aria {
     background-color: #DD0000;
     color: white;
+}
+
+/* main----content right strt */
+.content-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 26px;
+    width: 60%;
+    float: right;
+    margin-top: -250px;
+    margin-left: 0%;
+    margin-right: 100px;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.course .course-banner img {
+    width: 224px;
+    height: 127px;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
 }
