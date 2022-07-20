@@ -174,7 +174,6 @@ footer {
     width: 100%;
     background-color: #161616;
     color: white;
-    padding-bottom: 80px;
 }
 
 footer h1 {
@@ -255,7 +254,6 @@ hr {
     .flexible-container {
         width: 100%;
         flex-wrap: wrap;
-        float: left;
     }
 
     .content-left {
