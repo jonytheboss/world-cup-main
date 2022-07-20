@@ -10,11 +10,15 @@ body {
     color: white;
     width: auto;
     height: auto;
-    margin: 10px 130px;
+    margin: 40px 130px;
     border-radius: 15px;
 }
 
 .hafe-width {
+    align-items: end;
+    align-content: stretch;
+    height: auto;
+    width: auto;
     padding-left: 100px;
     padding-right: 20px;
     background-color: #161616;
@@ -92,6 +96,7 @@ body {
 }
 
 .left-aria {
+    width: 200px;
     flex-direction: column;
     border: 1px solid blue;
     margin: 10px 15px;
@@ -165,7 +170,7 @@ body {
 /* end the right content */
 footer {
     margin: 0 auto;
-    height: 400px;
+    height: auto;
     width: 100%;
     background-color: #161616;
     color: white;
@@ -208,4 +213,57 @@ hr {
 .fa-brands {
     margin-left: 30px;
     margin-top: 30px;
+}
+
+
+/* media value */
+
+
+
+/* mobile mobile mobile */
+
+@media only screen and (max-width: 688px) {
+    .flexible-container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .hafe-width,
+    .content-left,
+    .box,
+    .box-2 {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        margin-left: 90px;
+    }
+
+    .footer-nav {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+    }
+
+}
+
+/* tablet tablet tablet */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .flexible-container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .content-left {
+        display: none;
+    }
+
+    .footer-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+
 }
