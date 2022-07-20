@@ -24,17 +24,6 @@ body {
     border-radius: 5px;
 }
 
-.hafe-width img {
-
-    a
-}
-
-.big-header {
-    font-size: 50px;
-    text-align: left;
-    padding: ;
-}
-
 .top-button {
     background-color: #DD0000;
     color: white;
@@ -207,4 +196,16 @@ hr {
     font-weight: 500;
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+/* footer icon */
+.media-icon {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.fa-brands {
+    margin-left: 30px;
+    margin-top: 30px;
 }
